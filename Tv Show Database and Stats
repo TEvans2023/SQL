@@ -1,0 +1,20 @@
+#Tashia's SQL Portfolio
+
+Check out my store database here. Notice how I've described each piece of code (first I created a store database, then displayed the databse ordered by price).
+
+create table tvshows (id integer primary key, name text, category integer, quantity integer, price integer, rating text);
+insert into tvshows values (1, "Greys Anatomy", 3, 18, 32, "good");
+insert into tvshows values (2, "Bones", 5, 52, 27, "good");
+insert into tvshows values (3, "NCIS", 5, 22, 42, "good");
+insert into tvshows values (4, "Nanny", 2, 12, 20, "ok");
+insert into tvshows values (5, "The Middle", 1, 35, 20, "good");
+insert into tvshows values (6, "Mikey", 1, 12, 15, "ok");
+insert into tvshows values (7, "JimBob", 4, 7,10,"bad");
+insert into tvshows values (8, "Private Practice", 3,22,32, "good");
+insert into tvshows values (9, "MinuteMen", 3,12,55,"good");
+insert into tvshows values (10, "Ricki", 6, 22,25, "good");
+
+select * from tvshows;
+select * from tvshows
+where price >=15
+order by price asc;
